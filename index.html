@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commergent</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;900&family=Hind+Madurai:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Log-in Modal -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap Simple Modal Login Modal Form</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Primul header -->
+    <header id="first-header-background">
+        <div id="first-header" class="margin">
+            <div id="header-select" class="">
+                <label for="choose" style="font-family: 'Hind Madurai';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px; padding-right:5px;">Cras quis orci ut lacus</label>
+                <select name="choose" id="header-select-option">
+                    <option value="">Vivamus in posuere</option>
+                    <option value="">Vivamus in posuere</option>
+                    <option value="">Vivamus in posuere</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Header cu logo -->
+    <header class="flex margin second-header" style="padding-top:25px">
+        <div class="header-items icon-center">
+            <a href="">
+                <img src="/SVG/logo-header.svg" alt="logo">
+            </a>
+        </div>
+
+        <div class="header-items search-div second-header icon-center">
+            <label id="search">
+                <input type="text" placeholder="Nulla quis lectus ac arcu" id="search-input">
+            </label>
+        </div>
+
+        <div class="header-items  second-header icon-center">
+            <a href="" class="header-icons">
+                <img src="/SVg/list.svg" alt="">
+            </a>
+
+            <a href="" class="header-icons">
+                <img src="/SVg/reorder.svg" alt="">
+            </a>
+
+            <a href="#myModal" class="header-icons trigger-btn" data-toggle="modal">
+                <img src="/SVg/account.svg" alt="">
+            </a>
+
+            <a href="" class="header-icons">
+                <img src="/SVg/logout.svg" alt="">
+            </a>
+
+            <a href="" class="header-icons">
+                <img src="/SVg/language.svg" alt="">
+            </a>
+
+            <span class="header-icons" onclick="openNav()">
+                <i class="fa badge fa-lg" value=0>
+                    <img src="/SVg/cart.svg" alt="">
+                </i>
+            </span>
+        </div>
+    </header>
+
+    <!-- Login Modal -->
+
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="modal-header">
+                        <p class="modal-title">Login</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="create-account">
+                        <span> You do not have an account? Create it <a href="" style="text-decoration: underline;">
+                                here!</a> </span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Username" required="required">
+                        </div>
+                        <div class="form-group">
+                            <div class="clearfix">
+                            </div>
+
+                            <input type="password" placeholder="********" class="form-control" required="required">
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <label class="form-check-label"><input type="checkbox"> Rember me on this device <br>
+                            <label> Forgot your password? Reset it <a href="" style="text-decoration: underline;"> here!
+                                </a></label></label>
+
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Minicart -->
+    <div id="mySidenav" class="sidenav" style="z-index:5">
+        <p id="your-cart">YOUR CART</p>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3 id="empty">Your cart is empty!</h3>
+        <h5 class="cart-subtitles">What are others buying?</h5>
+
+        <!-- Carousel -->
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+                <div style="width:50%;">
+                    <img src=" /images/category-1.png" class="carousel-images" align="right">
+                    <p style="padding-left: 30px;" class="cart-items">Nullab</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/images/category-2.png" class="carousel-images2" align="left">
+                    <p style="padding-left: 5px;" class="cart-items">Duis</p>
+                </div>
+            </div>
+
+            <div class="mySlides fadeing">
+                <div style="width:50%;">
+                    <img src=" /images/category-3.png" class="carousel-images" align="right">
+                    <p style="padding-left: 30px;" class="cart-items">Aliquam</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/images/category-4.png" class="carousel-images2" align="left">
+                    <p style="padding-left: 5px;" class="cart-items">Praesent</p>
+                </div>
+            </div>
+
+            <div class="mySlides fadeing">
+                <div style="width:50%;">
+                    <img src=" /images/category-5.png" class="carousel-images" align="right">
+                    <p style="padding-left: 30px;" class="cart-items">Quisque</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/images/category-6.png" class="carousel-images2" align="left">
+                    <p style="padding-left: 5px;" class="cart-items">Etiam</p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <h5 class="cart-subtitles" style="padding-top:30px">Try our NEW categories!</h5>
+
+        <!-- Carousel -->
+        <div class="slideshow-container">
+
+            <div class="mySlides2 fadeing">
+                <div style="width:50%;">
+                    <img src=" /images/category-3.png" class="carousel-images" align="right">
+                    <p style="padding-left: 30px;" class="cart-items">Aliquam</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/images/category-4.png" class="carousel-images2" align="left">
+                    <p style="padding-left: 5px;" class="cart-items">Praesent</p>
+                </div>
+            </div>
+
+            <div class="mySlides2">
+                <div style="width:50%;">
+                    <img src=" /images/category-1.png" class="carousel-images" align="right">
+                    <p style="padding-left: 30px;" class="cart-items">Nullab</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/images/category-2.png" class="carousel-images2" align="left">
+                    <p style="padding-left: 5px;" class="cart-items">Duis</p>
+                </div>
+            </div>
+
+            <div class="mySlides2 fadeing">
+                <div style="width:50%;">
+                    <img src=" /images/category-5.png" class="carousel-images" align="right">
+                    <p style="padding-left: 30px;" class="cart-items">Quisque</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/images/category-6.png" class="carousel-images2" align="left">
+                    <p style="padding-left: 5px;" class="cart-items">Etiam</p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides2(-1)">❮</a>
+            <a class="next" onclick="plusSlides2(1)">❯</a>
+
+        </div>
+
+    </div>
+
+    <div class="w3-overlay" onclick="closeNav()" style="cursor:pointer" id="myOverlay"></div>
+
+    <!-- Header albastru cu meniu -->
+    <div id="third">
+        <div id="third-header" class="flex margin">
+            <div class="header-items flex">
+                <a href="" class="third-elements">
+                    <img src="/SVG/ship.svg" alt="">
+                </a>
+                <div class="flex">
+                    <a href="" class="third-elements"> Phasellus</a>
+                    <a href="" class="third-elements"> Donec</a>
+                    <a href="" class="third-elements"> maximus</a>
+                    <a href="" class="third-elements"> scelerisque</a>
+
+                    <div class="dropdown">
+                        <button class="dropbtn flex">NUNC
+                            <img src="/SVG/dropdown.svg" alt="" id="dropdown-icon">
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Pellentesque</a>
+                            <a href="#">Nullam</a>
+                            <a href="#">Etiam consequat</a>
+                            <a href="#">Donec mauris</a>
+                            <a href="#">Morbi dignissim</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Meniu mobile -->
+    <div class="topnav">
+        <p href="" style="padding-top:50px; margin:0; background-color:#072048"></p>
+        <div id="myLinks">
+            <a href="" class="third-elements"> Phasellus</a>
+            <a href="" class="third-elements"> Donec</a>
+            <a href="" class="third-elements"> maximus</a>
+            <a href="" class="third-elements"> scelerisque</a>
+            <p class="third-elements" style="text-align:center">NUNC: ⬇️</p>
+            <a href="#" class="sub-third-elements">Pellentesque</a>
+            <a href="#" class="sub-third-elements">Nullam</a>
+            <a href="#" class="sub-third-elements">Etiam consequat</a>
+            <a href="#" class="sub-third-elements">Donec mauris</a>
+            <a href="#" class="sub-third-elements">Morbi dignissim</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+            <img src="/SVG/ship.svg" alt="">
+        </a>
+    </div>
+
+    <div id="first-block">
+        <div class="margin">
+            <div class="column ghost"></div>
+            <div class="column" id="first-block-frame">
+                <h1 id="title">Donec ultrices est iaculis egestas </h1>
+                <p id="first-block-par">Fusce mattis, odio eget efficitur lacinia, tellus odio ornare metus, id aliquam
+                    quam
+                    nulla id
+                    tortor.</p>
+                <a href="">
+                    <button class="first-block-button zoom-in"> Aenean vitae</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="second-block" class="margin">
+        <h2 class="second-title">Quisque</h2>
+        <p class="second-par">Donec non massa consequat, viverra nisl a, pharetra ex.</p>
+
+        <div id="images" class="margin">
+            <a href="" class="second-block-image margin">
+                <img src="/images/category-1.png" alt="" class="resize-images">
+                <p class="food-titles">Nullam</p>
+            </a>
+
+            <a href="" class="second-block-image margin">
+                <img src="/images/category-2.png" alt="" class="resize-images">
+                <p class="food-titles">Duis</p>
+            </a>
+
+            <a href="" class="second-block-image margin">
+                <img src="/images/category-3.png" alt="" class="resize-images">
+                <p class="food-titles">Aliquam</p>
+            </a>
+
+            <a href="" class="second-block-image margin">
+                <img src="/images/category-4.png" alt="" class="resize-images">
+                <p class="food-titles">Praesent</p>
+            </a>
+
+            <a href="" class="second-block-image margin">
+                <img src="/images/category-5.png" alt="" class="resize-images">
+                <p class="food-titles">Quisque</p>
+            </a>
+
+            <a href="" class="second-block-image margin">
+                <img src="/images/category-6.png" alt="" class="resize-images">
+                <p class="food-titles">Etiam</p>
+            </a>
+
+            <a href="" class="second-block-image margin">
+                <img src="/images/category-7.png" alt="" class="resize-images">
+                <p class="food-titles">Cras</p>
+            </a>
+
+            <a href="" class="second-block-image margin">
+                <img src="/images/category-8.png" alt="" class="resize-images">
+                <p class="food-titles">Vivamus</p>
+            </a>
+
+        </div>
+    </div>
+
+    <div>
+        <img src="/images/bay.png" alt="" class="bay-image">
+    </div>
+
+    <div class="containers-block">
+
+        <div id="first-container" class="margin">
+            <h3 class="second-title">Morbi porttitor</h3>
+            <p class="second-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra lectus vel lorem
+                vehicula dapibus.
+                Etiam pretium, tellus ac aliquet hendrerit, ante massa tincidunt magna, sit amet tincidunt nulla massa
+                non lectus.</p>
+        </div>
+    </div>
+
+
+    <div class="flex margin" style="flex-wrap: wrap;">
+        <div class="container-1  title-margin">
+            <h3 class="second-title align">Maecenas</h3>
+            <p class="second-par">Nunc porta iaculis elementum. Duis vel orci quis mauris eleifend varius. Nullam
+                vel
+                neque id ante volutpat iaculis. Etiam consequat urna ut urna tristique, a ornare erat condimentum.
+            </p>
+        </div>
+        <div class="container-1  title-margin">
+            <h3 class="second-title align">Aliquam</h3>
+            <p class="second-par">Maecenas a nibh et eros ultrices molestie. Proin aliquet dui quis venenatis
+                pulvinar.
+                Sed ultricies nunc quis nisl pharetra, non iaculis nibh mollis. Donec mauris sapien, sollicitudin ac
+                luctus non, semper in orci. Donec felis lacus, maximus eu maximus sed, pharetra sed purus.</p>
+        </div>
+        <div class="container-1  title-margin">
+            <h3 class="second-title align">Suspendisse</h3>
+            <p class="second-par">Vestibulum vulputate tortor lectus, vehicula mattis nisi ullamcorper non. Vivamus
+                tincidunt, sem sed hendrerit cursus, mi ex pulvinar arcu, a molestie ligula diam ac risus. Quisque
+                vulputate neque felis, ac tincidunt justo finibus vel. In nec orci euismod nulla iaculis ornare eu
+                vestibulum sapien. </p>
+        </div>
+    </div>
+
+
+
+    <div style="padding:50px 0;">
+        <img src="/images/lighthouse.png" alt="" class="bay-image">
+    </div>
+
+
+    <p class="second-title" style="text-align: center; padding-bottom:30px;"> Aliquam eget</p>
+
+
+    <div class="flex margin" style="flex-wrap: wrap; margin-bottom:30px">
+        <div class="container-2">
+            <p class="second-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper libero ut
+                commodo mollis. Nullam tempus vestibulum hendrerit. Ut iaculis lacus vel orci viverra, sed suscipit
+                turpis luctus.</p>
+        </div>
+        <div class="container-2">
+            <p class="second-par">Sed id accumsan lorem, eu ornare neque. Vivamus pulvinar, sapien eu sollicitudin
+                efficitur, lectus velit vulputate felis, sit amet molestie mi sem a est. Integer sagittis, velit
+                fermentum maximus bibendum, nulla velit volutpat magna, sed convallis arcu ipsum ut urna.</p>
+        </div>
+        <div class="container-2">
+            <p class="second-par">Nunc consequat, erat eu vulputate malesuada, sem lacus aliquet mauris, eu hendrerit
+                magna mi ac metus. Vestibulum finibus sagittis arcu vestibulum mollis. </p>
+        </div>
+
+        <div class="container-2">
+            <p class="second-par">Sed sodales ante nec nisi interdum, a semper diam congue. Etiam interdum iaculis leo
+                in dapibus. </p>
+        </div>
+
+    </div>
+
+    <div class="blue-container">
+
+        <div class="margin flex block">
+            <div class="column align">
+                <h3 id="white-title">Phasellus nec tellus</h3>
+                <p id="white-par">Pellentesque et sem et lacus vestibulum efficitur. Integer elementum enim vitae
+                    elementum
+                    scelerisque. Nulla maximus tortor et lorem cursus sollicitudin. Curabitur turpis nunc, fermentum et
+                    augue sit amet, dictum rhoncus quam. Suspendisse id commodo sapien. Donec metus enim, porttitor vel
+                    dolor et, lobortis tempus justo. Phasellus in elit nec nisi faucibus ultrices gravida at tellus.</p>
+                <a href="">
+                    <button class="first-block-button zoom-in"> Aenean vitae</button>
+                </a>
+            </div>
+            <div class="column ocean-side">
+                <img src="/images/ship.png" alt="ship" id="ship-image">
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="white-container" class="margin">
+
+        <h3 class="second-title">Suspendisse at elit purus</h3>
+        <p class="second-par">Etiam consequat urna ut urna tristique, a ornare erat condimentum.</p>
+        <div class="flex block">
+
+            <div class="column pc-map">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="500" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Romania&t=&z=5&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 500px;
+                                width: 500px;
+                            }
+                        </style>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 500px;
+                                width: 500px;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mobile-map">
+                <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Romania+()&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                            href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on
+                            map</a></iframe>
+                </div>
+            </div>
+
+            <div class="column pad">
+
+                <div class="contact-div">
+                    <h3 class="contact-titles">Contact</h3>
+                    <a href="mailto:contact@email.com" class="contact-a">contact@email.com</a>
+
+                    <h3 class="contact-titles contact-padding">Office</h3>
+                    <p class="contact-subtitles">Main Address</p>
+                    <a href="" class="contact-a">Main Street, 1 <br>
+                        99977 City
+                    </a>
+
+                    <p class="contact-subtitles contact-padding">Secondary Address</p>
+                    <a href="" class="contact-a">Secondary Street, 2 <br>
+                        99977 City
+                    </a>
+
+                    <p class="contact-subtitles contact-padding">Contact</p>
+                    <a href="tel:+999-999-191" class="contact-a flex block">
+                        <img src="/SVG/phone.svg" alt="" style="padding-right:10px;">
+                        999-999-191
+                    </a>
+
+                    <a href="fax:99977" class="contact-a flex block">
+                        <img src="/svg/fax.svg" alt="" style="padding-right:10px;">
+                        99977 City
+                    </a>
+
+                    <a href="mailto:office@email.com" class="contact-a flex block">
+                        <img src="/svg/mail.svg" alt="" style="padding-right:10px;">
+                        office@email.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <p class="contact-subtitles">John Adams</p>
+                <p class="contact-positions">Administrator</p>
+                <a href="tel:+99 999-999-191" class="contact-a flex block">
+                    <img src="/SVG/phone-mobile.svg" alt="" style="padding-right:10px;">
+                    +99 999-999-191
+                </a>
+
+                <p class="contact-subtitles" style="padding-top: 18px;">Jane Adams</p>
+                <p class="contact-positions">Sales Manager</p>
+                <a href="tel:+99 999-999-191" class="contact-a flex block">
+                    <img src="/SVG/phone-mobile.svg" alt="" style="padding-right:10px;">
+                    +99 999-999-191
+                </a>
+
+                <p class="contact-subtitles" style="padding-top: 18px;">Jill Adams</p>
+                <p class="contact-positions">Operations Manager</p>
+                <a href="tel:+99 999-999-191" class="contact-a flex block">
+                    <img src="/SVG/phone-mobile.svg" alt="" style="padding-right:10px;">
+                    +99 999-999-191
+                </a>
+
+                <p class="contact-subtitles" style="padding-top: 18px;">Jay Adams</p>
+                <p class="contact-positions">Finance Manager</p>
+                <a href="tel:+99 999-999-191" class="contact-a flex block">
+                    <img src="/SVG/phone-mobile.svg" alt="" style="padding-right:10px;">
+                    +99 999-999-191
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        <div class="margin align">
+            <a href="">
+                <img src="/svg/logo-footer.svg" alt="logo">
+            </a>
+
+            <div class="flex block social">
+                <a href="" class="social-items">
+                    <img src="/svg/linkedin.svg" alt="">
+                </a>
+                <a href="" class="social-items">
+                    <img src="/svg/twitter.svg" alt="">
+                </a>
+                <a href="" class="social-items">
+                    <img src="/svg/facebook.svg" alt="">
+                </a>
+            </div>
+
+            <div class="flex block" style="padding-top:30px;">
+                <div class="column">
+                    <div class="column grid">
+                        <p class="footer-titles">Company</p>
+
+                        <a href="tel:+999-999-191" class="footer-info">
+                            <img src="/SVG/phone-white.svg" alt="" style="padding-right:10px;">
+                            999-999-191
+                        </a>
+
+                        <a href="fax:99977" class="footer-info">
+                            <img src="/svg/fax-white.svg" alt="" style="padding-right:10px;">
+                            99977 City
+                        </a>
+
+                        <a href="mailto:contact@email.com" class="footer-info">
+                            <img src="/svg/mail-white.svg" alt="" style="padding-right:10px;">
+                            contact@email.com
+                        </a>
+                    </div>
+                    <div class="column" style="display: grid;">
+                        <p class="footer-titles">Phasellus</p>
+                        <a href="" class="footer-info">Praesent sed</a>
+                        <a href="" class="footer-info">Nam dignissim</a>
+                        <a href="" class="footer-info">Donec maximus volutpat </a>
+                        <a href="" class="footer-info">Donec felis</a>
+                        <a href="" class="footer-info">Donec quis cursu</a>
+                        <a href="" class="footer-info">Vivamus ut metus</a>
+                        <a href="" class="footer-info">Suspendisse at</a>
+                    </div>
+                </div>
+
+                <div class="column">
+                    <div class="column" style="display: grid;">
+                        <p class="footer-titles">Phasellus</p>
+                        <a href="" class="footer-info">Praesent sed</a>
+                        <a href="" class="footer-info">Nam dignissim</a>
+                        <a href="" class="footer-info">Donec maximus volutpat </a>
+                        <a href="" class="footer-info">Donec felis</a>
+                        <a href="" class="footer-info">Donec quis cursu</a>
+                        <a href="" class="footer-info">Vivamus ut metus</a>
+                        <a href="" class="footer-info">Suspendisse at</a>
+                    </div>
+
+                    <div class="column" style="display: grid;">
+                        <p class="footer-titles">Phasellus</p>
+                        <a href="" class="footer-info">Praesent sed</a>
+                        <a href="" class="footer-info">Nam dignissim</a>
+                        <a href="" class="footer-info">Donec maximus volutpat </a>
+                        <a href="" class="footer-info">Donec felis</a>
+                        <a href="" class="footer-info">Donec quis cursu</a>
+                        <a href="" class="footer-info">Vivamus ut metus</a>
+                        <a href="" class="footer-info">Suspendisse at</a>
+                    </div>
+                </div>
+            </div>
+
+            <p id="last-words">© 2022 Company</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

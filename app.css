@@ -1,0 +1,976 @@
+.margin {
+    max-width: 1080px;
+    margin: 0 auto;
+    float: none;
+}
+
+#first-header-background {
+    background: #F2F2F2;
+    height: 44px;
+}
+
+#first-header {
+    background: #F2F2F2;
+    height: 44px;
+    display: flex;
+    padding-top: 7px;
+}
+
+
+#header-select-option {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 6px 50px 6px 5px;
+    border: 1px solid #e5e5e5;
+    color: #B5B5B5;
+}
+
+.flex {
+    display: flex;
+}
+
+.header-items {
+    width: 50%;
+}
+
+#search {
+    position: relative;
+    padding-right: 10px;
+}
+
+#search::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    bottom: 0;
+    width: 15px;
+    background: url("/SVG/search.svg") center / contain no-repeat;
+    margin-top: -10px;
+}
+
+#search-input {
+    width: 250px;
+    background-color: #F2F2F2;
+    border: none;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #B5B5B5;
+
+}
+
+::placeholder {
+    color: #B5B5B5
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #B5B5B5;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #B5B5B5;
+}
+
+.header-icons {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-icons:hover {
+    text-decoration: none;
+
+}
+
+#third {
+    background-color: #072048;
+    height: 48px;
+    margin-top: 25px;
+}
+
+#third-header {
+    background-color: #072048;
+    height: 48px;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.third-elements {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 15px 15px 10px 15px;
+}
+
+.badge:after {
+    content: attr(value);
+    font-size: 16px;
+    color: #fff;
+    background: #0052A0;
+    border-radius: 50%;
+    padding: 0 5px;
+    position: relative;
+    left: -10px;
+    top: -10px;
+    /* opacity: 0.9; */
+}
+
+.sub-third-elements {
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 15px 15px 10px 15px;
+}
+
+.third-elements .sub-third-elements {
+    text-align: center;
+}
+
+.third-elements:link,
+.third-elements:visited {
+    text-decoration: inherit;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.third-elements:hover {
+    background-color: #0052A0;
+}
+
+.third-elements:active {
+    background-color: #0052A0;
+}
+
+#dropdown-icon {
+    margin-top: 3px;
+    padding-left: 10px;
+}
+
+/* Dropdown-ul din header */
+.dropbtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: inherit;
+    font-family: 'Archivo';
+    /* font-style: normal; */
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 15px 15px 10px 15px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #072048;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.dropdown-content a:hover {
+    background-color: #0052A0;
+    color: #FFFFFF;
+    text-decoration: inherit;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #0052A0;
+}
+
+
+#first-block {
+    position: static;
+    height: 500px;
+    background: url("/images/hero.png") top / contain no-repeat;
+}
+
+#first-block-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 14px;
+    padding-top: 100px;
+}
+
+.zoom-in {
+    transition: transform .2s;
+}
+
+.zoom-in:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+#title {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #072048;
+    margin-bottom: 0;
+}
+
+#first-block-par {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: -10px;
+    margin-bottom: 0;
+
+
+    color: #072048;
+}
+
+.first-block-button {
+    background: #0052A0;
+    height: 44px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+}
+
+#second-block {
+    text-align: center;
+}
+
+.second-title {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    color: #072048;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+.second-par {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #072048;
+}
+
+#images {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.second-block-image {
+    padding-right: 15px;
+    padding-bottom: 20px;
+    transition: transform .2s;
+}
+
+.second-block-image:hover {
+    text-decoration: none;
+
+}
+
+.second-block-image:hover {
+    -ms-transform: scale(1.1);
+    /* IE 9 */
+    -webkit-transform: scale(1.1);
+    /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.resize-images {
+    width: 220px;
+    height: 150px;
+}
+
+.food-titles {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #072048;
+}
+
+
+
+.bay-image {
+    width: 100%;
+    height: auto;
+}
+
+.containers-block {
+    display: flex;
+    justify-content: center;
+}
+
+#first-container {
+    width: 400px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.container-1 {
+    width: 300px;
+    padding: 50px 30px;
+    background: #F3F9FF;
+    margin: 0 15px 30px 15px;
+}
+
+.container-2 {
+    width: 500px;
+    padding: 50px 30px;
+    margin: 0 15px 30px 15px;
+    background: #F3F9FF;
+}
+
+.blue-container {
+    background-color: #072048;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#white-title {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    color: #FFFFFF;
+}
+
+#white-par {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+
+#ship-image {
+    width: -webkit-fill-available;
+}
+
+#white-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact-titles {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    color: #072048;
+}
+
+.contact-padding {
+    padding-top: 30px;
+}
+
+.contact-subtitles {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #072048;
+    margin-bottom: 0;
+}
+
+.contact-a {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration-line: underline;
+    color: #072048;
+    margin-bottom: 0;
+}
+
+.contact-positions {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration-line: none;
+    color: #072048;
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: black;
+    padding: 50px 0 30px 0;
+}
+
+.footer-titles {
+    color: white;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+.footer-info {
+    color: white;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 0px;
+    margin-bottom: 0;
+}
+
+.footer-info:hover {
+    text-decoration: none;
+    color: white;
+
+}
+
+.grid {
+    display: grid;
+}
+
+#last-words {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Meniu Mobile */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.icon-center {
+    text-align: center;
+    padding-bottom: 10px;
+
+}
+
+.topnav a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+}
+
+.topnav a:hover {
+    text-decoration: none;
+}
+
+.topnav a.icon {
+    background: #072048;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #0052A0;
+    color: white;
+}
+
+.active {
+    background-color: #0052A0;
+    color: white;
+}
+
+.social-items {
+    margin: 15px 15px 0 15px;
+}
+
+@media screen and (max-width:641px) {
+    #first-block-frame {
+        text-align: center;
+        width: 100%;
+        padding-top: 130px;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width: 1025px) {
+    #first-block-frame {
+        text-align: center;
+        width: 100%;
+        padding-top: 250px;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 1025px) {
+
+    #first-header {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .second-header {
+        display: block;
+    }
+
+    .column {
+        float: none;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header-items {
+        width: 100%;
+    }
+
+    .container-2 {
+        width: 80%;
+        padding: 50px 30px 50px 30px;
+        margin: 15px auto;
+        background: #F3F9FF;
+    }
+
+    #third {
+        display: none;
+    }
+
+    .ghost {
+        display: none;
+    }
+
+    #title {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    #first-container {
+        width: 70%;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .title-margin {
+        margin-bottom: 30px;
+    }
+
+    .block {
+        display: block;
+    }
+
+    .align {
+        text-align: center;
+    }
+
+    .ocean-side {
+        padding-top: 40px;
+    }
+
+    #white-container {
+        text-align: center;
+    }
+
+    .pc-map {
+        display: none;
+    }
+
+    .social {
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    #title {
+        font-size: 30px;
+    }
+
+    #first-block-par {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1026px) {
+    .topnav {
+        display: none;
+    }
+
+    .pad {
+        padding-left: 40px;
+    }
+
+    .mobile-map {
+        display: none;
+    }
+
+    .social {
+        float: right
+    }
+
+    .search-div {
+        display: block;
+    }
+
+    #search {
+        text-align: right;
+        display: block;
+    }
+}
+
+
+
+/* Log-in Modal */
+
+.modal-login {
+    width: 320px;
+}
+
+.modal-title {
+    margin-top: 0px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #072048;
+}
+
+
+.modal-login .modal-content {
+    border: none;
+    border-radius: 0px;
+}
+
+.modal-login .modal-header {
+    position: relative;
+    border: none;
+}
+
+.modal-login .modal-body {
+    padding: 10px 16px 0 16px;
+}
+
+.modal-login h4 {
+    text-align: center;
+    font-size: 26px;
+}
+
+.modal-login label {
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.modal-login .form-control,
+.modal-login .btn {
+    min-height: 38px;
+}
+
+.modal-login .hint-text {
+    text-align: center;
+}
+
+.modal-login .close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.modal-login .checkbox-inline {
+    margin-top: 12px;
+}
+
+.modal-login input[type="checkbox"] {
+    position: relative;
+    top: 1px;
+}
+
+.modal-login .btn {
+    min-width: 100px;
+    background-color: #0052A0;
+    border: none;
+    line-height: normal;
+    border-radius: 0px;
+}
+
+.modal-login .btn:hover,
+.modal-login .btn:focus {
+    background-color: #072048;
+}
+
+.modal-login .hint-text a {
+    color: #999;
+}
+
+.create-account {
+    width: 80%;
+    background-color: #F3F9FF;
+    padding: 15px 5px;
+    margin: 0 auto;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #072048;
+}
+
+.form-check-label {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #072048;
+}
+
+.btn-primary {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.modal-footer {
+    border: 0px !important;
+}
+
+/* Side minicart */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #072048;
+    text-decoration: none;
+}
+
+#empty {
+    padding: 40px 0;
+    text-align: center;
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #072048;
+}
+
+.cart-subtitles {
+    font-family: 'Hind Madurai';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #072048;
+    padding-left: 25px;
+    padding-bottom: 10px;
+}
+
+.cart-items {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #072048;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: black;
+}
+
+.closebtn:hover {
+    text-decoration: none;
+    color: black;
+}
+
+#your-cart {
+    position: absolute;
+    top: 27px;
+    left: 25px;
+    font-size: 14px;
+    margin-right: 50px;
+    color: black;
+    font-weight: 700;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+
+/* Carousel */
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 0 5px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.sidenav a {
+    padding: 0 5px;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: #072048;
+    color: white !important;
+}
+
+/* .active,
+.dot:hover {
+    background-color: #717171;
+} */
+
+.carousel-images {
+    height: auto;
+    padding-right: 5px;
+    width: 85%;
+    display: block;
+
+}
+
+.carousel-images2 {
+    height: auto;
+    padding-left: 5px;
+    width: 85%;
+    display: block;
+
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
