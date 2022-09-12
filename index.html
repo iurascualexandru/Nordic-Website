@@ -16,11 +16,12 @@
         href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;900&family=Hind+Madurai:wght@400;700&display=swap"
         rel="stylesheet">
 
+    <!-- Ulterior am adaugat icon -->
+    <link rel="icon" type="image/x-icon" href="/ship.ico">
     <!-- Log-in Modal -->
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Bootstrap Simple Modal Login Modal Form</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -32,70 +33,70 @@
 </head>
 
 <body>
-    <!-- Primul header -->
-    <header id="first-header-background">
-        <div id="first-header" class="margin">
-            <div id="header-select" class="">
-                <label for="choose" style="font-family: 'Hind Madurai';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px; padding-right:5px;">Cras quis orci ut lacus</label>
-                <select name="choose" id="header-select-option">
-                    <option value="">Vivamus in posuere</option>
-                    <option value="">Vivamus in posuere</option>
-                    <option value="">Vivamus in posuere</option>
-                </select>
-            </div>
-        </div>
-    </header>
 
-    <!-- Header cu logo -->
-    <header class="flex margin second-header" style="padding-top:25px">
-        <div class="header-items icon-center">
+
+    <div class="header-1">
+        <div class="block--center" id="header-1--padding">
+
+            <label for="choose" class="header-1__text font-madurai-400">Cras quis orci ut lacus</label>
+            <select name="choose" class="header-1__option font-madurai-400">
+                <option value="">Vivamus in posuere</option>
+                <option value="">Vivamus in posuere</option>
+                <option value="">Vivamus in posuere</option>
+            </select>
+
+        </div>
+    </div>
+
+    <div class="header-2 flex block--center">
+        <div class="header-2__blocks">
             <a href="">
                 <img src="/SVG/logo-header.svg" alt="logo">
             </a>
         </div>
 
-        <div class="header-items search-div second-header icon-center">
+        <div class="header-2__blocks display--block">
             <label id="search">
                 <input type="text" placeholder="Nulla quis lectus ac arcu" id="search-input">
             </label>
         </div>
 
-        <div class="header-items  second-header icon-center">
-            <a href="" class="header-icons">
+        <div class="header-2__blocks display--block">
+
+            <a href="" class="header-2__icons">
                 <img src="/SVg/list.svg" alt="">
             </a>
 
-            <a href="" class="header-icons">
+            <a href="" class="header-2__icons">
                 <img src="/SVg/reorder.svg" alt="">
             </a>
 
-            <a href="#myModal" class="header-icons trigger-btn" data-toggle="modal">
+            <a href="#modal" class="header-2__icons trigger-btn" data-toggle="modal">
                 <img src="/SVg/account.svg" alt="">
             </a>
 
-            <a href="" class="header-icons">
+            <a href="" class="header-2__icons">
                 <img src="/SVg/logout.svg" alt="">
             </a>
 
-            <a href="" class="header-icons">
+            <a href="" class="header-2__icons">
                 <img src="/SVg/language.svg" alt="">
             </a>
 
-            <span class="header-icons" onclick="openNav()">
+            <span class="header-2__icons" onclick="openNav()">
                 <i class="fa badge fa-lg" value=0>
                     <img src="/SVg/cart.svg" alt="">
                 </i>
             </span>
+
         </div>
-    </header>
+
+    </div>
 
     <!-- Login Modal -->
 
-    <div id="myModal" class="modal fade">
-        <div class="modal-dialog modal-login">
+    <div id="modal" class="modal fade">
+        <div class="modal-dialog modal__login">
             <div class="modal-content">
                 <form action="/examples/actions/confirmation.php" method="post">
                     <div class="modal-header">
@@ -130,54 +131,57 @@
     </div>
 
     <!-- Minicart -->
-    <div id="mySidenav" class="sidenav" style="z-index:5">
-        <p id="your-cart">YOUR CART</p>
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <h3 id="empty">Your cart is empty!</h3>
-        <h5 class="cart-subtitles">What are others buying?</h5>
+    <div id="side-cart" class="side-nav" style="z-index:5">
+        <p id="side-cart__your-cart">YOUR CART</p>
+        <a href="javascript:void(0)" class="side-cart__closebtn" onclick="closeNav()">&times;</a>
+        <h3 id="side-cart__empty">Your cart is empty!</h3>
+        <h5 class="side-cart__subtitles">What are others buying?</h5>
+
 
         <!-- Carousel -->
         <div class="slideshow-container">
 
-            <div class="mySlides">
+            <div class="slideshow-container__slides">
                 <div style="width:50%;">
-                    <img src=" /images/category-1.png" class="carousel-images" align="right">
-                    <p style="padding-left: 30px;" class="cart-items">Nullab</p>
+                    <img src=" /images/category-1.png" class="slideshow-container__img" align="right">
+                    <p style="padding-left: 30px;" class="slides__text">Nullab</p>
                 </div>
                 <div style="width:50%;">
-                    <img src="/images/category-2.png" class="carousel-images2" align="left">
-                    <p style="padding-left: 5px;" class="cart-items">Duis</p>
-                </div>
-            </div>
-
-            <div class="mySlides fadeing">
-                <div style="width:50%;">
-                    <img src=" /images/category-3.png" class="carousel-images" align="right">
-                    <p style="padding-left: 30px;" class="cart-items">Aliquam</p>
-                </div>
-                <div style="width:50%;">
-                    <img src="/images/category-4.png" class="carousel-images2" align="left">
-                    <p style="padding-left: 5px;" class="cart-items">Praesent</p>
+                    <img src="/images/category-2.png" class="slideshow-container__img-2" align="left">
+                    <p style="padding-left: 5px;" class="slides__text">Duis</p>
                 </div>
             </div>
 
-            <div class="mySlides fadeing">
+            <div class="slideshow-container__slides fadeing">
                 <div style="width:50%;">
-                    <img src=" /images/category-5.png" class="carousel-images" align="right">
-                    <p style="padding-left: 30px;" class="cart-items">Quisque</p>
+                    <img src=" /images/category-3.png" class="slideshow-container__img" align="right">
+                    <p style="padding-left: 30px;" class="slides__text">Aliquam</p>
                 </div>
                 <div style="width:50%;">
-                    <img src="/images/category-6.png" class="carousel-images2" align="left">
-                    <p style="padding-left: 5px;" class="cart-items">Etiam</p>
+                    <img src="/images/category-4.png" class="slideshow-container__img-2" align="left">
+                    <p style="padding-left: 5px;" class="slides__text">Praesent</p>
                 </div>
             </div>
 
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
+            <div class="slideshow-container__slides fadeing">
+                <div style="width:50%;">
+                    <img src=" /images/category-5.png" class="slideshow-container__img" align="right">
+                    <p style="padding-left: 30px;" class="slides__text">Quisque</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/images/category-6.png" class="slideshow-container__img-2" align="left">
+                    <p style="padding-left: 5px;" class="slides__text">Etiam</p>
+                </div>
+            </div>
+
+            <a class="slides__prev" onclick="plusSlides(-1)">❮</a>
+            <a class="slides__next" onclick="plusSlides(1)">❯</a>
 
         </div>
 
         <h5 class="cart-subtitles" style="padding-top:30px">Try our NEW categories!</h5>
+
+
 
         <!-- Carousel -->
         <div class="slideshow-container">
@@ -225,8 +229,168 @@
     <div class="w3-overlay" onclick="closeNav()" style="cursor:pointer" id="myOverlay"></div>
 
     <!-- Header albastru cu meniu -->
-    <div id="third">
-        <div id="third-header" class="flex margin">
+    <div id="header-3">
+        <div class="flex block--center">
+            <div class="header-3__menu flex">
+                <a href="" class="menu__items">
+                    <img src="/SVG/ship.svg" alt="">
+                </a>
+                <div class="flex">
+                    <a href="" class="menu__items"> Phasellus</a>
+                    <a href="" class="menu__items"> Donec</a>
+                    <a href="" class="menu__items"> maximus</a>
+                    <a href="" class="menu__items"> scelerisque</a>
+
+                    <div class="menu__dropdown">
+                        <button class="dropdown__btn flex">NUNC
+                            <img src="/SVG/dropdown.svg" alt="" id="dropdown__icon">
+                        </button>
+                        <div class="dropdown__content">
+                            <a href="#">Pellentesque</a>
+                            <a href="#">Nullam</a>
+                            <a href="#">Etiam consequat</a>
+                            <a href="#">Donec mauris</a>
+                            <a href="#">Morbi dignissim</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Meniu mobile -->
+    <div class="mobile-nav">
+        <p href="" style="padding-top:50px; margin:0; background-color:#072048"></p>
+        <div id="mobile-nav__links">
+            <a href="" class="menu__items"> Phasellus</a>
+            <a href="" class="menu__items"> Donec</a>
+            <a href="" class="menu__items"> maximus</a>
+            <a href="" class="menu__items"> scelerisque</a>
+            <p class="menu__items" style="text-align:center">NUNC: ⬇️</p>
+            <a href="#" class="menu__sub-items">Pellentesque</a>
+            <a href="#" class="menu__sub-items">Nullam</a>
+            <a href="#" class="menu__sub-items">Etiam consequat</a>
+            <a href="#" class="menu__sub-items">Donec mauris</a>
+            <a href="#" class="menu__sub-items">Morbi dignissim</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+            <img src="/SVG/ship.svg" alt="">
+        </a>
+    </div>
+
+    <div class="block-1">
+        <div class="block--center">
+            <div class="block-1__column ghost"></div>
+            <div class="block-1__column" id="first-block-frame">
+                <h1 id="title">Donec ultrices est iaculis egestas </h1>
+                <p id="first-block-par">Fusce mattis, odio eget efficitur lacinia, tellus odio ornare metus, id
+                    aliquam
+                    quam
+                    nulla id
+                    tortor.</p>
+                <a href="">
+                    <button class="first-block-button zoom-in"> Aenean vitae</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Carousel -->
+    <!-- <div class="slideshow-container">
+
+            <div class="mySlides2 fadeing">
+                <div style="width:50%;">
+                    <img src=" /images/category-3.png" class="carousel-images" align="right">
+                    <p style="padding-left: 30px;" class="cart-items">Aliquam</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/images/category-4.png" class="carousel-images2" align="left">
+                    <p style="padding-left: 5px;" class="cart-items">Praesent</p>
+                </div>
+            </div>
+
+            <div class="mySlides2">
+                <div style="width:50%;">
+                    <img src=" /images/category-1.png" class="carousel-images" align="right">
+                    <p style="padding-left: 30px;" class="cart-items">Nullab</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/images/category-2.png" class="carousel-images2" align="left">
+                    <p style="padding-left: 5px;" class="cart-items">Duis</p>
+                </div>
+            </div>
+
+            <div class="mySlides2 fadeing">
+                <div style="width:50%;">
+                    <img src=" /images/category-5.png" class="carousel-images" align="right">
+                    <p style="padding-left: 30px;" class="cart-items">Quisque</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/images/category-6.png" class="carousel-images2" align="left">
+                    <p style="padding-left: 5px;" class="cart-items">Etiam</p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides2(-1)">❮</a>
+            <a class="next" onclick="plusSlides2(1)">❯</a>
+
+        </div>
+
+    </div>
+
+    <div class="w3-overlay" onclick="closeNav()" style="cursor:pointer" id="myOverlay"></div> -->
+
+
+    <!-- Header albastru cu meniu -->
+    <!-- <div id="third">
+        <div id="third-header" class="flex block--center">
             <div class="header-items flex">
                 <a href="" class="third-elements">
                     <img src="/SVG/ship.svg" alt="">
@@ -253,9 +417,9 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <!-- Meniu mobile -->
+    <!-- Meniu mobile
     <div class="topnav">
         <p href="" style="padding-top:50px; margin:0; background-color:#072048"></p>
         <div id="myLinks">
@@ -273,14 +437,15 @@
         <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
             <img src="/SVG/ship.svg" alt="">
         </a>
-    </div>
+    </div> -->
 
-    <div id="first-block">
-        <div class="margin">
+    <!-- <div id="first-block">
+        <div class="block--center">
             <div class="column ghost"></div>
             <div class="column" id="first-block-frame">
                 <h1 id="title">Donec ultrices est iaculis egestas </h1>
-                <p id="first-block-par">Fusce mattis, odio eget efficitur lacinia, tellus odio ornare metus, id aliquam
+                <p id="first-block-par">Fusce mattis, odio eget efficitur lacinia, tellus odio ornare metus, id
+                    aliquam
                     quam
                     nulla id
                     tortor.</p>
@@ -289,49 +454,49 @@
                 </a>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <div id="second-block" class="margin">
+    <div id="second-block" class="block--center">
         <h2 class="second-title">Quisque</h2>
         <p class="second-par">Donec non massa consequat, viverra nisl a, pharetra ex.</p>
 
-        <div id="images" class="margin">
-            <a href="" class="second-block-image margin">
+        <div id="images" class="block--center">
+            <a href="" class="second-block-image block--center">
                 <img src="/images/category-1.png" alt="" class="resize-images">
                 <p class="food-titles">Nullam</p>
             </a>
 
-            <a href="" class="second-block-image margin">
+            <a href="" class="second-block-image block--center">
                 <img src="/images/category-2.png" alt="" class="resize-images">
                 <p class="food-titles">Duis</p>
             </a>
 
-            <a href="" class="second-block-image margin">
+            <a href="" class="second-block-image block--center">
                 <img src="/images/category-3.png" alt="" class="resize-images">
                 <p class="food-titles">Aliquam</p>
             </a>
 
-            <a href="" class="second-block-image margin">
+            <a href="" class="second-block-image block--center">
                 <img src="/images/category-4.png" alt="" class="resize-images">
                 <p class="food-titles">Praesent</p>
             </a>
 
-            <a href="" class="second-block-image margin">
+            <a href="" class="second-block-image block--center">
                 <img src="/images/category-5.png" alt="" class="resize-images">
                 <p class="food-titles">Quisque</p>
             </a>
 
-            <a href="" class="second-block-image margin">
+            <a href="" class="second-block-image block--center">
                 <img src="/images/category-6.png" alt="" class="resize-images">
                 <p class="food-titles">Etiam</p>
             </a>
 
-            <a href="" class="second-block-image margin">
+            <a href="" class="second-block-image block--center">
                 <img src="/images/category-7.png" alt="" class="resize-images">
                 <p class="food-titles">Cras</p>
             </a>
 
-            <a href="" class="second-block-image margin">
+            <a href="" class="second-block-image block--center">
                 <img src="/images/category-8.png" alt="" class="resize-images">
                 <p class="food-titles">Vivamus</p>
             </a>
@@ -345,17 +510,19 @@
 
     <div class="containers-block">
 
-        <div id="first-container" class="margin">
+        <div id="first-container" class="block--center">
             <h3 class="second-title">Morbi porttitor</h3>
-            <p class="second-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra lectus vel lorem
+            <p class="second-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra lectus vel
+                lorem
                 vehicula dapibus.
-                Etiam pretium, tellus ac aliquet hendrerit, ante massa tincidunt magna, sit amet tincidunt nulla massa
+                Etiam pretium, tellus ac aliquet hendrerit, ante massa tincidunt magna, sit amet tincidunt nulla
+                massa
                 non lectus.</p>
         </div>
     </div>
 
 
-    <div class="flex margin" style="flex-wrap: wrap;">
+    <div class="flex block--center" style="flex-wrap: wrap;">
         <div class="container-1  title-margin">
             <h3 class="second-title align">Maecenas</h3>
             <p class="second-par">Nunc porta iaculis elementum. Duis vel orci quis mauris eleifend varius. Nullam
@@ -389,9 +556,10 @@
     <p class="second-title" style="text-align: center; padding-bottom:30px;"> Aliquam eget</p>
 
 
-    <div class="flex margin" style="flex-wrap: wrap; margin-bottom:30px">
+    <div class="flex block--center" style="flex-wrap: wrap; margin-bottom:30px">
         <div class="container-2">
-            <p class="second-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper libero ut
+            <p class="second-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper libero
+                ut
                 commodo mollis. Nullam tempus vestibulum hendrerit. Ut iaculis lacus vel orci viverra, sed suscipit
                 turpis luctus.</p>
         </div>
@@ -401,12 +569,14 @@
                 fermentum maximus bibendum, nulla velit volutpat magna, sed convallis arcu ipsum ut urna.</p>
         </div>
         <div class="container-2">
-            <p class="second-par">Nunc consequat, erat eu vulputate malesuada, sem lacus aliquet mauris, eu hendrerit
+            <p class="second-par">Nunc consequat, erat eu vulputate malesuada, sem lacus aliquet mauris, eu
+                hendrerit
                 magna mi ac metus. Vestibulum finibus sagittis arcu vestibulum mollis. </p>
         </div>
 
         <div class="container-2">
-            <p class="second-par">Sed sodales ante nec nisi interdum, a semper diam congue. Etiam interdum iaculis leo
+            <p class="second-par">Sed sodales ante nec nisi interdum, a semper diam congue. Etiam interdum iaculis
+                leo
                 in dapibus. </p>
         </div>
 
@@ -414,14 +584,17 @@
 
     <div class="blue-container">
 
-        <div class="margin flex block">
+        <div class="block--center flex block">
             <div class="column align">
                 <h3 id="white-title">Phasellus nec tellus</h3>
                 <p id="white-par">Pellentesque et sem et lacus vestibulum efficitur. Integer elementum enim vitae
                     elementum
-                    scelerisque. Nulla maximus tortor et lorem cursus sollicitudin. Curabitur turpis nunc, fermentum et
-                    augue sit amet, dictum rhoncus quam. Suspendisse id commodo sapien. Donec metus enim, porttitor vel
-                    dolor et, lobortis tempus justo. Phasellus in elit nec nisi faucibus ultrices gravida at tellus.</p>
+                    scelerisque. Nulla maximus tortor et lorem cursus sollicitudin. Curabitur turpis nunc, fermentum
+                    et
+                    augue sit amet, dictum rhoncus quam. Suspendisse id commodo sapien. Donec metus enim, porttitor
+                    vel
+                    dolor et, lobortis tempus justo. Phasellus in elit nec nisi faucibus ultrices gravida at tellus.
+                </p>
                 <a href="">
                     <button class="first-block-button zoom-in"> Aenean vitae</button>
                 </a>
@@ -434,7 +607,7 @@
     </div>
 
 
-    <div id="white-container" class="margin">
+    <div id="white-container" class="block--center">
 
         <h3 class="second-title">Suspendisse at elit purus</h3>
         <p class="second-par">Etiam consequat urna ut urna tristique, a ornare erat condimentum.</p>
@@ -546,7 +719,7 @@
 
 
     <footer>
-        <div class="margin align">
+        <div class="block--center align">
             <a href="">
                 <img src="/svg/logo-footer.svg" alt="logo">
             </a>

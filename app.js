@@ -1,4 +1,4 @@
-const x = document.getElementById("myLinks");
+const x = document.getElementById("mobile-nav__links");
 function menuFunction() {
     if (x.style.display === "block") {
         x.style.display = "none";
@@ -12,16 +12,16 @@ function menuFunction() {
 
 function openNav() {
     if (window.innerWidth < 642) {
-        document.getElementById("mySidenav").style.width = "100%";
+        document.getElementById("side-cart").style.width = "100%";
     }
 
-    else { document.getElementById("mySidenav").style.width = "400px"; }
+    else { document.getElementById("side-cart").style.width = "400px"; }
     document.getElementById("myOverlay").style.display = "block";
 
 }
 
 function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("side-cart").style.width = "0";
     document.getElementById("myOverlay").style.display = "none";
 }
 
@@ -41,7 +41,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    const slides = document.getElementsByClassName("mySlides");
+    const slides = document.getElementsByClassName("slideshow-container__slides");
 
     if (n > slides.length) { slideIndex = 1 }
     if (n < 1) { slideIndex = slides.length }
@@ -53,24 +53,24 @@ function showSlides(n) {
 
 // Second Carousel
 
-let slideIndex2 = 1;
-showSlides2(slideIndex);
+// let slideIndex2 = 1;
+// showSlides2(slideIndex);
 
-function plusSlides2(m) {
-    showSlides2(slideIndex2 += m);
-}
+// function plusSlides2(m) {
+//     showSlides2(slideIndex2 += m);
+// }
 
-function currentSlide2(m) {
-    showSlides2(slideIndex2 = m);
-}
+// function currentSlide2(m) {
+//     showSlides2(slideIndex2 = m);
+// }
 
-function showSlides2(m) {
-    const slides2 = document.getElementsByClassName("mySlides2");
+// function showSlides2(m) {
+//     const slides2 = document.getElementsByClassName("mySlides2");
 
-    if (m > slides2.length) { slideIndex2 = 1 }
-    if (m < 1) { slideIndex2 = slides2.length }
-    for (let i = 0; i < slides2.length; i++) {
-        slides2[i].style.display = "none";
-    }
-    slides2[slideIndex2 - 1].style.display = "flex";
-}
+//     if (m > slides2.length) { slideIndex2 = 1 }
+//     if (m < 1) { slideIndex2 = slides2.length }
+//     for (let i = 0; i < slides2.length; i++) {
+//         slides2[i].style.display = "none";
+//     }
+//     slides2[slideIndex2 - 1].style.display = "flex";
+// }
