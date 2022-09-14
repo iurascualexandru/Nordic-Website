@@ -1,4 +1,4 @@
-:root {}
+/* :root {} */
 
 .flex {
     display: flex;
@@ -70,7 +70,7 @@
     top: 10px;
     bottom: 0;
     width: 15px;
-    background: url("/SVG/search.svg") center / contain no-repeat;
+    background: url("/src/assets/SVG/search.svg") center / contain no-repeat;
     margin-top: -10px;
 }
 
