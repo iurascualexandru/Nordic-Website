@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commergent</title>
+    <link rel="stylesheet" href="/src/css/app.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;900&family=Hind+Madurai:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Ulterior am adaugat icon -->
+    <link rel="icon" type="image/x-icon" href="/ship.ico">
+    <!-- Log-in Modal -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!-- header 1 -->
+        <div class="header-1">
+            <div class="container" id="header-1--padding">
+
+                <label for="choose" class="header-1__text font-madurai-400">Cras quis orci ut lacus</label>
+                <select name="choose" class="header-1__option font-madurai-400">
+                    <option value="">Vivamus in posuere</option>
+                    <option value="">Vivamus in posuere</option>
+                    <option value="">Vivamus in posuere</option>
+                </select>
+
+            </div>
+        </div>
+        <!-- header 2 -->
+        <div class="py-15 flex container">
+            <div class="header-2__blocks">
+                <a href="">
+                    <img src="/src/assets/SVG/logo-header.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="header-2__blocks display--block">
+                <label id="header-2__search">
+                    <input type="text" placeholder="Nulla quis lectus ac arcu" id="header-2__search-input">
+                </label>
+            </div>
+
+            <nav class="header-2__blocks display--block">
+
+                <a href="" class="header-2__icons">
+                    <img src="/src/assets/SVG/list.svg" alt="">
+                </a>
+
+                <a href="" class="header-2__icons">
+                    <img src="/src/assets/SVG/reorder.svg" alt="">
+                </a>
+
+                <a href="#modal" class="header-2__icons trigger-btn" data-toggle="modal">
+                    <img src="/src/assets/SVG/account.svg" alt="">
+                </a>
+
+                <a href="" class="header-2__icons">
+                    <img src="/src/assets/SVG/logout.svg" alt="">
+                </a>
+
+                <a href="" class="header-2__icons">
+                    <img src="/src/assets/SVG/language.svg" alt="">
+                </a>
+
+                <span class="header-2__icons" onclick="openNav()">
+                    <i class="fa badge fa-lg" value=0>
+                        <img src="/src/assets/SVG/cart.svg" alt="">
+                    </i>
+                </span>
+
+            </nav>
+
+        </div>
+
+        <!-- Header albastru cu meniu -->
+        <div id="header-3">
+            <div class="flex container">
+                <div class="header-3__menu flex">
+                    <a href="" class="menu__items">
+                        <img src="/src/assets/SVG/ship.svg" alt="">
+                    </a>
+                    <nav class="flex">
+                        <a href="" class="menu__items"> Phasellus</a>
+                        <a href="" class="menu__items"> Donec</a>
+                        <a href="" class="menu__items"> maximus</a>
+                        <a href="" class="menu__items"> scelerisque</a>
+
+                        <div class="menu__dropdown">
+                            <button class="dropdown__btn flex">NUNC
+                                <img src="/src/assets/SVG/dropdown.svg" alt="" id="dropdown__icon">
+                            </button>
+                            <div class="dropdown__content">
+                                <a href="#">Pellentesque</a>
+                                <a href="#">Nullam</a>
+                                <a href="#">Etiam consequat</a>
+                                <a href="#">Donec mauris</a>
+                                <a href="#">Morbi dignissim</a>
+
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- Login Modal -->
+
+    <div id="modal" class="modal fade">
+        <div class="modal-dialog modal__login">
+            <div class="modal-content">
+                <form action="/examples/actions/confirmation.php" method="post">
+                    <div class="modal-header">
+                        <p class="modal-title">Login</p>
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    </div>
+                    <div class="create-account">
+                        <span> You do not have an account? Create it <a href="" style="text-decoration: underline;">
+                                here!</a> </span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Username" required="required">
+                        </div>
+                        <div class="form-group">
+                            <div class="clearfix">
+                            </div>
+
+                            <input type="password" placeholder="********" class="form-control" required="required">
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-between">
+                        <label class="form-check-label"><input type="checkbox"> Rember me on this device <br>
+                            <label> Forgot your password? Reset it <a href="" style="text-decoration: underline;"> here!
+                                </a></label></label>
+
+                        <input type="submit" class="btn btn-primary" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Minicart -->
+    <div id="side-cart" class="side-nav" style="z-index:5">
+        <p id="side-cart__your-cart">YOUR CART</p>
+        <a href="javascript:void(0)" class="side-cart__closebtn" onclick="closeNav()">&times;</a>
+        <h3 id="side-cart__empty">Your cart is empty!</h3>
+        <h5 class="side-cart__subtitles">What are others buying?</h5>
+
+
+        <!-- Carousel -->
+        <div class="slideshow-container">
+
+            <div class="slideshow-container__slides">
+                <div style="width:50%;">
+                    <img src=" /src/assets/images/category-1.png" class="slideshow-container__img" align="right">
+                    <p style="padding-left: 30px;" class="slides__text">Nullab</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/src/assets/images/category-2.png" class="slideshow-container__img-2" align="left">
+                    <p style="padding-left: 5px;" class="slides__text">Duis</p>
+                </div>
+            </div>
+
+            <div class="slideshow-container__slides fadeing">
+                <div style="width:50%;">
+                    <img src=" /src/assets/images/category-3.png" class="slideshow-container__img" align="right">
+                    <p style="padding-left: 30px;" class="slides__text">Aliquam</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/src/assets/images/category-4.png" class="slideshow-container__img-2" align="left">
+                    <p style="padding-left: 5px;" class="slides__text">Praesent</p>
+                </div>
+            </div>
+
+            <div class="slideshow-container__slides fadeing">
+                <div style="width:50%;">
+                    <img src=" /src/assets/images/category-5.png" class="slideshow-container__img" align="right">
+                    <p style="padding-left: 30px;" class="slides__text">Quisque</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/src/assets/images/category-6.png" class="slideshow-container__img-2" align="left">
+                    <p style="padding-left: 5px;" class="slides__text">Etiam</p>
+                </div>
+            </div>
+
+            <a class="slides__prev" onclick="plusSlides(-1)">❮</a>
+            <a class="slides__next" onclick="plusSlides(1)">❯</a>
+
+        </div>
+
+        <h5 class="cart-subtitles" style="padding-top:30px">Try our NEW categories!</h5>
+
+
+
+        <!-- Carousel -->
+        <div class="slideshow-container">
+
+            <div class="mySlides2 fadeing">
+                <div style="width:50%;">
+                    <img src=" /src/assets/images/category-3.png" class="carousel-images" align="right">
+                    <p style="padding-left: 30px;" class="cart-items">Aliquam</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/src/assets/images/category-4.png" class="carousel-images2" align="left">
+                    <p style="padding-left: 5px;" class="cart-items">Praesent</p>
+                </div>
+            </div>
+
+            <div class="mySlides2">
+                <div style="width:50%;">
+                    <img src=" /src/assets/images/category-1.png" class="carousel-images" align="right">
+                    <p style="padding-left: 30px;" class="cart-items">Nullab</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/src/assets/images/category-2.png" class="carousel-images2" align="left">
+                    <p style="padding-left: 5px;" class="cart-items">Duis</p>
+                </div>
+            </div>
+
+            <div class="mySlides2 fadeing">
+                <div style="width:50%;">
+                    <img src=" /src/assets/images/category-5.png" class="carousel-images" align="right">
+                    <p style="padding-left: 30px;" class="cart-items">Quisque</p>
+                </div>
+                <div style="width:50%;">
+                    <img src="/src/assets/images/category-6.png" class="carousel-images2" align="left">
+                    <p style="padding-left: 5px;" class="cart-items">Etiam</p>
+                </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides2(-1)">❮</a>
+            <a class="next" onclick="plusSlides2(1)">❯</a>
+
+        </div>
+
+    </div>
+
+    <div class="w3-overlay" onclick="closeNav()" style="cursor:pointer" id="myOverlay"></div>
+
+
+
+
+    <!-- Meniu mobile -->
+    <div class="mobile-nav">
+        <p href="" style="padding-top:50px; margin:0; background-color:#072048"></p>
+        <div id="mobile-nav__links">
+            <a href="" class="menu__items"> Phasellus</a>
+            <a href="" class="menu__items"> Donec</a>
+            <a href="" class="menu__items"> maximus</a>
+            <a href="" class="menu__items"> scelerisque</a>
+            <p class="menu__items" style="text-align:center">NUNC: ⬇️</p>
+            <a href="#" class="menu__sub-items">Pellentesque</a>
+            <a href="#" class="menu__sub-items">Nullam</a>
+            <a href="#" class="menu__sub-items">Etiam consequat</a>
+            <a href="#" class="menu__sub-items">Donec mauris</a>
+            <a href="#" class="menu__sub-items">Morbi dignissim</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="menuFunction()">
+            <img src="/SVG/ship.svg" alt="">
+        </a>
+    </div>
+
+
+    <!-- Primul block -->
+    <section class="block-1">
+        <img src="/src/assets/images/hero.png" alt="" class="block-1__img">
+        <div class="container block-1--grid">
+            <div> </div>
+            <div>
+                <div class="block-1__content-alignment">
+                    <h1 class="block-1__title">Donec ultrices est iaculis egestas </h1>
+                    <p class="block-1__par">Fusce mattis, odio eget efficitur lacinia, tellus odio ornare metus, id
+                        aliquam
+                        quam
+                        nulla id
+                        tortor.</p>
+                    <a href="">
+                        <button class="block-1__btn zoom-in"> Aenean vitae</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cel de-al 2-lea block -->
+    <section class="container block-2 py-15">
+        <header>
+            <h2 class="block-2__title">Quisque</h2>
+            <p class="block-2__par">Donec non massa consequat, viverra nisl a, pharetra ex.</p>
+        </header>
+        <div class="block-2__image-layout">
+            <article>
+                <a href="" class="block-2__img">
+                    <img src="/src/assets/images/category-1.png" alt="" class="resize-images">
+                    <p class="block-2__food-titles">Nullam</p>
+                </a>
+            </article>
+
+            <article>
+                <a href="" class="block-2__img">
+                    <img src="/src/assets/images/category-2.png" alt="" class="resize-images">
+                    <p class="block-2__food-titles">Duis</p>
+                </a>
+            </article>
+
+            <article>
+                <a href="" class="block-2__img">
+                    <img src="/src/assets/images/category-3.png" alt="" class="resize-images">
+                    <p class="block-2__food-titles">Aliquam</p>
+                </a>
+            </article>
+
+            <article>
+                <a href="" class="block-2__img">
+                    <img src="/src/assets/images/category-4.png" alt="" class="resize-images">
+                    <p class="block-2__food-titles">Praesent</p>
+                </a>
+            </article>
+
+            <article>
+                <a href="" class="block-2__img">
+                    <img src="/src/assets/images/category-5.png" alt="" class="resize-images">
+                    <p class="block-2__food-titles">Quisque</p>
+                </a>
+            </article>
+
+            <article>
+                <a href="" class="block-2__img">
+                    <img src="/src/assets/images/category-6.png" alt="" class="resize-images">
+                    <p class="block-2__food-titles">Etiam</p>
+                </a>
+            </article>
+
+            <article>
+                <a href="" class="block-2__img">
+                    <img src="/src/assets/images/category-7.png" alt="" class="resize-images">
+                    <p class="block-2__food-titles">Cras</p>
+                </a>
+            </article>
+
+            <article>
+                <a href="" class="block-2__img">
+                    <img src="/src/assets/images/category-8.png" alt="" class="resize-images">
+                    <p class="block-2__food-titles">Vivamus</p>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <section>
+        <!-- Block imagine -->
+        <div>
+            <img src="/src/assets/images/bay.png" alt="" class="image-block-1">
+        </div>
+
+        <!-- Block 3 -->
+        <div class="block-3">
+            <header class="container block-3__first-container">
+                <h3 class="block-2__title">Morbi porttitor</h3>
+                <p class="block-2__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra lectus vel
+                    lorem
+                    vehicula dapibus.
+                    Etiam pretium, tellus ac aliquet hendrerit, ante massa tincidunt magna, sit amet tincidunt nulla
+                    massa
+                    non lectus.</p>
+            </header>
+        </div>
+        <div class="block-3__items-layout container py-15">
+            <div class="block-3__container ">
+                <article>
+                    <h3 class="block-2__title align">Maecenas</h3>
+                    <p class="block-2__par">Nunc porta iaculis elementum. Duis vel orci quis mauris eleifend varius.
+                        Nullam
+                        vel
+                        neque id ante volutpat iaculis. Etiam consequat urna ut urna tristique, a ornare erat
+                        condimentum.
+                    </p>
+                </article>
+            </div>
+            <div class="block-3__container">
+                <article>
+                    <h3 class="block-2__title align">Aliquam</h3>
+                    <p class="block-2__par">Maecenas a nibh et eros ultrices molestie. Proin aliquet dui quis venenatis
+                        pulvinar.
+                        Sed ultricies nunc quis nisl pharetra, non iaculis nibh mollis. Donec mauris sapien,
+                        sollicitudin ac
+                        luctus non, semper in orci. Donec felis lacus, maximus eu maximus sed, pharetra sed purus.</p>
+                </article>
+            </div>
+            <div class="block-3__container">
+                <article>
+                    <h3 class="block-2__title align">Suspendisse</h3>
+                    <p class="block-2__par">Vestibulum vulputate tortor lectus, vehicula mattis nisi ullamcorper non.
+                        Vivamus
+                        tincidunt, sem sed hendrerit cursus, mi ex pulvinar arcu, a molestie ligula diam ac risus.
+                        Quisque
+                        vulputate neque felis, ac tincidunt justo finibus vel. In nec orci euismod nulla iaculis ornare
+                        eu
+                        vestibulum sapien. </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- Block imagine -->
+        <div>
+            <img src="/src/assets/images/lighthouse.png" alt="" class="image-block-2 py-15">
+        </div>
+
+        <!-- Block 4 -->
+        <header>
+            <p class="block-4__title py-15"> Aliquam eget</p>
+        </header>
+        <div class="container block-4 margin-bottom-2">
+            <div class="block-4__container">
+                <article>
+                    <p class="block-4__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper
+                        libero
+                        ut
+                        commodo mollis. Nullam tempus vestibulum hendrerit. Ut iaculis lacus vel orci viverra, sed
+                        suscipit
+                        turpis luctus.</p>
+                </article>
+            </div>
+            <div class="block-4__container">
+                <article>
+                    <p class="block-4__par">Sed id accumsan lorem, eu ornare neque. Vivamus pulvinar, sapien eu
+                        sollicitudin
+                        efficitur, lectus velit vulputate felis, sit amet molestie mi sem a est. Integer sagittis, velit
+                        fermentum maximus bibendum, nulla velit volutpat magna, sed convallis arcu ipsum ut urna.</p>
+                </article>
+            </div>
+            <div class="block-4__container">
+                <article>
+                    <p class="block-4__par">Nunc consequat, erat eu vulputate malesuada, sem lacus aliquet mauris, eu
+                        hendrerit
+                        magna mi ac metus. Vestibulum finibus sagittis arcu vestibulum mollis. </p>
+                </article>
+            </div>
+
+            <div class="block-4__container">
+                <article>
+                    <p class="block-4__par">Sed sodales ante nec nisi interdum, a semper diam congue. Etiam interdum
+                        iaculis
+                        leo
+                        in dapibus. </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 5 - Cel cu background albastru -->
+    <section class="block-5 padding-y-2">
+        <div class="container block-5__grid">
+            <div class="block-5__text-content">
+                <h3 class="block-5__title">Phasellus nec tellus</h3>
+                <p class="block-5__par">Pellentesque et sem et lacus vestibulum efficitur. Integer elementum enim vitae
+                    elementum
+                    scelerisque. Nulla maximus tortor et lorem cursus sollicitudin. Curabitur turpis nunc, fermentum
+                    et
+                    augue sit amet, dictum rhoncus quam. Suspendisse id commodo sapien. Donec metus enim, porttitor
+                    vel
+                    dolor et, lobortis tempus justo. Phasellus in elit nec nisi faucibus ultrices gravida at tellus.
+                </p>
+                <a href="">
+                    <button class="block-5__btn zoom-in"> Aenean vitae</button>
+                </a>
+            </div>
+            <div>
+                <img src="/src/assets/images/ship.png" alt="ship" class="block-5__img">
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Block 6 -->
+    <section class="container block-6 padding-y-2">
+        <header>
+            <h3 class="block-6__title">Suspendisse at elit purus</h3>
+            <p class="block-6__par">Etiam consequat urna ut urna tristique, a ornare erat condimentum.</p>
+        </header>
+        <div class="block-6--grid block-6--display-block">
+            <div class="block-6__pc-map">
+                <div class="block-6__mapouter">
+                    <div class="block-6__gmap-canvas"><iframe width="500" height="500" id="block-6__gmap-canvas"
+                            src="https://maps.google.com/maps?q=Romania&t=&z=5&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-6__mobile-map">
+                <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no"
+                        marginheight="0" marginwidth="0"
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Romania+()&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
+                            href="https://www.maps.ie/distance-area-calculator.html">measure acres/hectares on
+                            map</a></iframe>
+                </div>
+            </div>
+            <div class="block-6--padding-left">
+                <div>
+                    <h3 class="block-6__contact-titles">Contact</h3>
+                    <a href="mailto:contact@email.com" class="block-6__contact-a">contact@email.com</a>
+
+                    <h3 class="block-6__contact-titles block-6--contact-padding">Office</h3>
+                    <p class="block-6__contact-subtitles">Main Address</p>
+                    <a href="" class="block-6__contact-a">Main Street, 1 <br>
+                        99977 City
+                    </a>
+
+                    <p class="block-6__contact-subtitles block-6--contact-padding">Secondary Address</p>
+                    <a href="" class="block-6__contact-a">Secondary Street, 2 <br>
+                        99977 City
+                    </a>
+
+                    <p class="block-6__contact-subtitles block-6--contact-padding">Contact</p>
+
+                    <a href="tel:+999-999-191" class="block-6__contact-a flex block-6--block">
+                        <img src="/src/assets/SVG/phone.svg" alt="" style="padding-right:10px;" class="">
+                        999-999-191
+                    </a>
+
+                    <a href="fax:99977" class="block-6__contact-a flex block-6--block">
+                        <img src="/src/assets/svg/fax.svg" alt="" style="padding-right:10px;">
+                        99977 City
+                    </a>
+
+                    <a href="mailto:office@email.com" class="block-6__contact-a flex block-6--block">
+                        <img src="/src/assets/svg/mail.svg" alt="" style="padding-right:10px;">
+                        office@email.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="column">
+                <p class="block-6__contact-subtitles">John Adams</p>
+                <p class="block-6__positions">Administrator</p>
+                <a href="tel:+99 999-999-191" class="block-6__contact-a flex block-6--block">
+                    <img src="/src/assets/SVG/phone-mobile.svg" alt="" style="padding-right:10px;">
+                    +99 999-999-191
+                </a>
+
+                <p class="block-6__contact-subtitles" style="padding-top: 18px;">Jane Adams</p>
+                <p class="block-6__positions">Sales Manager</p>
+                <a href="tel:+99 999-999-191" class="block-6__contact-a flex block-6--block">
+                    <img src="/src/assets/SVG/phone-mobile.svg" alt="" style="padding-right:10px;">
+                    +99 999-999-191
+                </a>
+
+                <p class="block-6__contact-subtitles" style="padding-top: 18px;">Jill Adams</p>
+                <p class="block-6__positions">Operations Manager</p>
+                <a href="tel:+99 999-999-191" class="block-6__contact-a flex block-6--block">
+                    <img src="/src/assets/SVG/phone-mobile.svg" alt="" style="padding-right:10px;">
+                    +99 999-999-191
+                </a>
+
+                <p class="block-6__contact-subtitles" style="padding-top: 18px;">Jay Adams</p>
+                <p class="block-6__positions">Finance Manager</p>
+                <a href="tel:+99 999-999-191" class="block-6__contact-a flex block-6--block">
+                    <img src="/src/assets/SVG/phone-mobile.svg" alt="" style="padding-right:10px;">
+                    +99 999-999-191
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer-ul -->
+    <footer>
+        <div class="container footer--align">
+            <a href="">
+                <img src="/src/assets/svg/logo-footer.svg" alt="logo">
+            </a>
+
+            <div class="flex footer--block footer__social">
+                <a href="" class="footer__social-items">
+                    <img src="/src/assets/svg/linkedin.svg" alt="">
+                </a>
+                <a href="" class="footer__social-items">
+                    <img src="/src/assets/svg/twitter.svg" alt="">
+                </a>
+                <a href="" class="footer__social-items">
+                    <img src="/src/assets/svg/facebook.svg" alt="">
+                </a>
+            </div>
+
+            <div class="footer--block footer__columns">
+
+                <div class="footer__items">
+                    <p class="footer__titles">Company</p>
+
+                    <a href="tel:+999-999-191" class="footer__info">
+                        <img src="/src/assets/SVG/phone-white.svg" alt="" style="padding-right:10px;">
+                        999-999-191
+                    </a>
+
+                    <a href="fax:99977" class="footer__info">
+                        <img src="/src/assets/svg/fax-white.svg" alt="" style="padding-right:10px;">
+                        99977 City
+                    </a>
+
+                    <a href="mailto:contact@email.com" class="footer__info">
+                        <img src="/src/assets/svg/mail-white.svg" alt="" style="padding-right:10px;">
+                        contact@email.com
+                    </a>
+                </div>
+                <div class="footer__items">
+                    <p class="footer__titles">Phasellus</p>
+                    <a href="" class="footer__info">Praesent sed</a>
+                    <a href="" class="footer__info">Nam dignissim</a>
+                    <a href="" class="footer__info">Donec maximus volutpat </a>
+                    <a href="" class="footer__info">Donec felis</a>
+                    <a href="" class="footer__info">Donec quis cursu</a>
+                    <a href="" class="footer__info">Vivamus ut metus</a>
+                    <a href="" class="footer__info">Suspendisse at</a>
+                </div>
+
+
+
+                <div class="footer__items">
+                    <p class="footer__titles">Phasellus</p>
+                    <a href="" class="footer__info">Praesent sed</a>
+                    <a href="" class="footer__info">Nam dignissim</a>
+                    <a href="" class="footer__info">Donec maximus volutpat </a>
+                    <a href="" class="footer__info">Donec felis</a>
+                    <a href="" class="footer__info">Donec quis cursu</a>
+                    <a href="" class="footer__info">Vivamus ut metus</a>
+                    <a href="" class="footer__info">Suspendisse at</a>
+                </div>
+
+                <div class="footer__items">
+                    <p class="footer__titles">Phasellus</p>
+                    <a href="" class="footer__info">Praesent sed</a>
+                    <a href="" class="footer__info">Nam dignissim</a>
+                    <a href="" class="footer__info">Donec maximus volutpat </a>
+                    <a href="" class="footer__info">Donec felis</a>
+                    <a href="" class="footer__info">Donec quis cursu</a>
+                    <a href="" class="footer__info">Vivamus ut metus</a>
+                    <a href="" class="footer__info">Suspendisse at</a>
+                </div>
+
+            </div>
+
+            <p class="footer__last-words">© 2022 Company</p>
+        </div>
+    </footer>
+
+
+    <script src="/src/app.js"></script>
+</body>
+
+</html>
