@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- Header 1 -->
+    <header>
+        <div class="container-fluid bg-light py-2">
+            <div class="container d-flex">
+                <p class="m-0 pt-1">Cras quis orci ut lacus</p>
+
+                <div class="dropdown ms-3">
+                    <button
+                        class="btn btn-secondary dropdown-toggle bg-light text-secondary border-secondary rounded-1 py-1 px-3"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Header 2 -->
+        <div class="container my-3 d-flex">
+            <div class="col-6">
+                <img src="/assets/SVG/logo-header.svg" alt="">
+            </div>
+
+            <div class="col-6 d-flex">
+                <div class="input-group rounded ">
+                    <input type="search" class="form-control rounded bg-light" placeholder="Search" aria-label="Search"
+                        aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </span>
+                </div>
+
+                <a href="" class="py-2 px-3">
+                    <img src="/assets/SVG/list.svg" alt="">
+                </a>
+
+                <a href="" class="py-2 px-3">
+                    <img src="/assets/svg/reorder.svg" alt="">
+                </a>
+
+                <a href="" class="py-2 px-3">
+                    <img src="/assets/svg/account.svg" alt="">
+                </a>
+
+                <a href="" class="py-2 px-3">
+                    <img src="/assets/SVG/logout.svg" alt="">
+                </a>
+
+                <a href="" class="py-2 px-3">
+                    <img src="/assets/SVG/language.svg" alt="">
+                </a>
+
+                <a href="" class="py-2 px-3">
+                    <img src="/assets/SVG/cart.svg" alt="">
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Header 3 -->
+        <div class="container-fluid bg-primary py-1">
+            <div class="container d-flex">
+
+                <a href="" class="text-white fw-bold text-uppercase me-4 mt-2">
+                    <img src="/assets/SVG/ship.svg" alt="">
+                </a>
+
+                <a href="" class="text-white fw-bold text-uppercase mx-4 mt-2">
+                    <p>Phasellus</p>
+                </a>
+
+                <a href="" class="text-white fw-bold text-uppercase mx-4 mt-2">
+                    <p>
+                        Donec
+                    </p>
+                </a>
+
+                <a href="" class="text-white fw-bold text-uppercase mx-4 mt-2">
+                    <p>
+                        maximus
+                    </p>
+                </a>
+
+                <a href="" class="text-white fw-bold text-uppercase mx-4 mt-2">
+                    <p>scelerisque</p>
+                </a>
+
+                <div class="dropdown">
+                    <button
+                        class="btn btn-primary dropdown-toggle text-white fw-bold text-uppercase ms-4 text-decoration-underline"
+                        type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        nunc
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- block 1 -->
+    <section class="container-fluid bg-image p-0"
+        style="background-image: url('/assets/images/hero.png'); background-repeat: no-repeat; background-size: cover; background-position: center center; height:500px">
+        <div class="container d-flex p-0">
+            <div class="col-6"></div>
+            <div class="col-6 mt-5">
+                <h1 class="fw-bolder">
+                    Donec ultrices est iaculis egestas
+                </h1>
+                <p>
+                    Fusce mattis, odio eget efficitur lacinia, tellus odio ornare metus, id aliquam quam nulla id
+                    tortor.
+                </p>
+                <button type="button" class="btn btn-primary btn-lg px-5">Aenean vitae</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- block 2 -->
+    <section class="container my-5">
+
+        <div class="justify-content-center pb-3">
+            <div class="d-block text-center">
+                <h1 class="fw-bolder">
+                    Quisque
+                </h1>
+                <p>Donec non massa consequat, viverra nisl a, pharetra ex.</p>
+            </div>
+        </div>
+
+        <div class="row row-cols-4 pb-4">
+            <div class="col text-center">
+                <img src="assets/images/category-1.png" alt="" class="h-auto" style="width:250px">
+                <h5 class="pt-2 fw-bolder">Nullam</h5>
+            </div>
+            <div class="col text-center">
+                <img src="assets/images/category-2.png" alt="" class="h-auto" style="width:250px">
+                <h5 class="pt-2 fw-bolder">Nullam</h5>
+            </div>
+            <div class="col text-center">
+                <img src="assets/images/category-3.png" alt="" class="h-auto" style="width:250px">
+                <h5 class="pt-2 fw-bolder">Nullam</h5>
+            </div>
+            <div class="col text-center">
+                <img src="assets/images/category-4.png" alt="" class="h-auto" style="width:250px">
+                <h5 class="pt-2 fw-bolder">Nullam</h5>
+            </div>
+        </div>
+        <div class="row row-cols-4">
+            <div class="col text-center">
+                <img src="assets/images/category-5.png" alt="" class="h-auto" style="width:250px">
+                <h5 class="pt-2 fw-bolder">Nullam</h5>
+            </div>
+            <div class="col text-center">
+                <img src="assets/images/category-6.png" alt="" class="h-auto" style="width:250px">
+                <h5 class="pt-2 fw-bolder">Nullam</h5>
+            </div>
+            <div class="col text-center">
+                <img src="assets/images/category-7.png" alt="" class="h-auto" style="width:250px">
+                <h5 class="pt-2 fw-bolder">Nullam</h5>
+            </div>
+            <div class="col text-center">
+                <img src="assets/images/category-8.png" alt="" class="h-auto" style="width:250px">
+                <h5 class="pt-2 fw-bolder">Nullam</h5>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <!-- Block 3 - imagine -->
+        <div class="container-fluid p-0">
+            <img src="/assets/images/bay.png" alt="" class="h-auto w-100">
+        </div>
+
+
+        <!-- Block 4 -->
+        <div class="container my-4 row mx-auto">
+            <div class="col-4"> </div>
+            <div class="col-4 text-center">
+                <h1 class="fw-bolder">Morbi porttitor</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra lectus vel
+                    lorem
+                    vehicula dapibus.
+                    Etiam pretium, tellus ac aliquet hendrerit, ante massa tincidunt magna, sit amet tincidunt nulla
+                    massa
+                    non lectus.</p>
+            </div>
+            <div class="col-4"> </div>
+        </div>
+
+        <div class="container row mx-auto mb-4">
+            <div class="col px-3 py-4 bg-light me-3">
+                <h3 class="fw-bolder">Maecenas</h3>
+                <p class="block-2__par">Nunc porta iaculis elementum. Duis vel orci quis mauris eleifend varius.
+                    Nullam
+                    vel
+                    neque id ante volutpat iaculis. Etiam consequat urna ut urna tristique, a ornare erat
+                    condimentum.
+                </p>
+            </div>
+            <div class="col px-5 py-5 bg-light mx-3">
+                <h3 class="fw-bolder">Maecenas</h3>
+                <p class="block-2__par">Nunc porta iaculis elementum. Duis vel orci quis mauris eleifend varius.
+                    Nullam
+                    vel
+                    neque id ante volutpat iaculis. Etiam consequat urna ut urna tristique, a ornare erat
+                    condimentum.
+                </p>
+            </div>
+            <div class="col px-3 py-4 bg-light ms-3">
+                <h3 class="fw-bolder">Maecenas</h3>
+                <p class="block-2__par">Nunc porta iaculis elementum. Duis vel orci quis mauris eleifend varius.
+                    Nullam
+                    vel
+                    neque id ante volutpat iaculis. Etiam consequat urna ut urna tristique, a ornare erat
+                    condimentum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 5 - imagine -->
+    <section>
+        <div class="container-fluid p-0">
+            <img src="/assets/images/lighthouse.png" alt="" class="h-auto w-100">
+        </div>
+
+        <!-- block 6 -->
+        <h2 class="text-center fw-bolder my-4">Aliquam eget</h2>
+        <div class="container row mx-auto mb-2">
+            <div class="col bg-light px-5 py-5 mx-3 ">
+                <p class="block-4__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper
+                    libero
+                    ut
+                    commodo mollis. Nullam tempus vestibulum hendrerit. Ut iaculis lacus vel orci viverra, sed
+                    suscipit
+                    turpis luctus.</p>
+            </div>
+            <div class="col bg-light px-5 py-5 mx-3">
+                <p class="block-4__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper
+                    libero
+                    ut
+                    commodo mollis. Nullam tempus vestibulum hendrerit. Ut iaculis lacus vel orci viverra, sed
+                    suscipit
+                    turpis luctus.</p>
+            </div>
+        </div>
+        <div class="container row mx-auto mb-5">
+            <div class="col bg-light px-5 py-5 mx-3">
+                <p class="block-4__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper
+                    libero
+                    ut
+                    commodo mollis. Nullam tempus vestibulum hendrerit. Ut iaculis lacus vel orci viverra, sed
+                    suscipit
+                    turpis luctus.</p>
+            </div>
+            <div class="col bg-light px-5 py-5 mx-3">
+                <p class="block-4__par">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ullamcorper
+                    libero
+                    ut
+                    commodo mollis. Nullam tempus vestibulum hendrerit. Ut iaculis lacus vel orci viverra, sed
+                    suscipit
+                    turpis luctus.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Block 7 - background albastru -->
+
+    <section class="container-fluid bg-primary py-5">
+        <div class="container row mx-auto">
+            <div class="col mt-5">
+                <h3 class="fw-bolder text-white ">Phasellus nec tellus</h3>
+                <p class="text-white">Pellentesque et sem et lacus vestibulum efficitur. Integer elementum enim vitae
+                    elementum
+                    scelerisque. Nulla maximus tortor et lorem cursus sollicitudin. Curabitur turpis nunc, fermentum
+                    et
+                    augue sit amet, dictum rhoncus quam. Suspendisse id commodo sapien. Donec metus enim, porttitor
+                    vel
+                    dolor et, lobortis tempus justo. Phasellus in elit nec nisi faucibus ultrices gravida at tellus.
+                </p>
+                <a href="">
+                    <button type="button" class="btn btn-primary btn-lg px-5"> Aenean vitae</button>
+                </a>
+            </div>
+            <div class="col">
+                <img src=" /assets/images/ship.png" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- block 8 - cu map -->
+    <section class="container my-5">
+        <h3 class="fw-bolder pt-4">Suspendisse at elit purus</h3>
+        <p>Etiam consequat urna ut urna tristique, a ornare erat condimentum.</p>
+        <div class="d-flex">
+            <div class="col-6 h-auto">
+                <div id="map-container-google-2" class="z-depth-1-half map-container w-auto h-auto">
+                    <iframe src="https://maps.google.com/maps?q=chicago&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-6 ps-5 d-flex">
+                <div class="col-6">
+
+                    <h5 class="fw-bolder mb-0">Contact</h5>
+                    <a href="mailto:contact@email.com">contact@email.com</a>
+
+                    <h5 class="fw-bolder mb-0 mt-3">Office</h5>
+                    <p class="fw-bold mb-0">Main Address</p>
+                    <a href="">Main Street, 1 <br>
+                        99977 City
+                    </a>
+
+                    <p class="fw-bold mb-0 mt-3">Secondary Address</p>
+                    <a href="">Secondary Street, 2 <br>
+                        99977 City
+                    </a>
+
+                    <p class="fw-bold mb-0 mt-3">Contact</p>
+
+                    <div class="d-flex flex-column">
+                        <a href="tel:+999-999-191">
+                            <img src="/assets/SVG/phone.svg" alt="" class="pe-2">
+                            999-999-191
+                        </a>
+
+                        <a href="fax:99977">
+                            <img src="/assets/svg/fax.svg" alt="" class="pe-2">
+                            99977 City
+                        </a>
+
+                        <a href="mailto:office@email.com">
+                            <img src="/assets/svg/mail.svg" alt="" class="pe-2">
+                            office@email.com
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6">
+
+                    <h5 class="fw-bolder mb-0">Contact</h5>
+                    <a href="mailto:contact@email.com">contact@email.com</a>
+
+                    <h5 class="fw-bolder mb-0 mt-3">Office</h5>
+                    <p class="fw-bold mb-0">Main Address</p>
+                    <a href="">Main Street, 1 <br>
+                        99977 City
+                    </a>
+
+                    <p class="fw-bold mb-0 mt-3">Secondary Address</p>
+                    <a href="">Secondary Street, 2 <br>
+                        99977 City
+                    </a>
+
+                    <p class="fw-bold mb-0 mt-3">Contact</p>
+
+                    <div class="d-flex flex-column">
+                        <a href="tel:+999-999-191">
+                            <img src="/assets/SVG/phone.svg" alt="" class="pe-2">
+                            999-999-191
+                        </a>
+
+                        <a href="fax:99977">
+                            <img src="/assets/svg/fax.svg" alt="" class="pe-2">
+                            99977 City
+                        </a>
+
+                        <a href="mailto:office@email.com">
+                            <img src="/assets/svg/mail.svg" alt="" class="pe-2">
+                            office@email.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
